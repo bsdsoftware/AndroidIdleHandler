@@ -21,7 +21,6 @@ Per utilizzare è necessario creare un'activity che estende IdleActivity e sovra
     }
 ```
 Il primo è il valore in millisecondi di tempo, che deve aspettare l'app prima di andare in idle.
-
 Il secondo specifica le operazioni da eseguire quando l'app entra nello stato di idle.
 
 NB: a seconda dei casi conviene chiamare il metodo super.stopTimer(); dentro al metodo onDestroy, per evitare crash.
