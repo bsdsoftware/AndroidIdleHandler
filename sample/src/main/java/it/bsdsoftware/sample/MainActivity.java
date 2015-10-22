@@ -49,6 +49,12 @@ public class MainActivity extends IdleActivity {
     }
 
     @Override
+    protected void onDestroy() {
+        stopTimer();
+        super.onDestroy();
+    }
+
+    @Override
     public long getTimeoutIdle() {
         return 1000*60*1; //1 minute
     }
